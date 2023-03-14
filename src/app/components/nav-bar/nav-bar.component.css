@@ -1,0 +1,41 @@
+div#nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    padding: 20px 40px 20px 40px;
+}
+
+button {
+    --button-padding: 15px;
+
+    font-weight: bold;
+    font-size: large;
+
+    background-color: transparent;
+
+    border-radius: 2rem;
+    border: .4rem solid darkslategrey;
+
+    padding: 0px var(--button-padding) 0px var(--button-padding);
+
+    box-shadow: 0 2px 5px 0 #6e6e6e;
+
+    transition: all ease .2s;
+}
+
+button:hover:not(.active) {
+    background-color: aliceblue;
+
+    border-color: slategray;
+
+    box-shadow: 0 5px 5px 2px #6e6e6e;
+
+    transform: scale(1.1);
+}
+
+.active {
+    background-color: darkslategray;
+    color: aliceblue;
+}
