@@ -3,8 +3,10 @@
     display: flex;
     justify-content: space-around;
 
-    padding: 10%;
+    padding: 2%;
     margin: auto;
+
+    transition: all ease .3s;
 }
 
 /* Id selector */
@@ -47,7 +49,7 @@ div[attr|="14"] /* Any div with the attribute "attr" where the value contains "1
 
 #main>#first,
 #main>#second {
-    width: 50%;
+    width: 100px;
 }
 
 #first {
