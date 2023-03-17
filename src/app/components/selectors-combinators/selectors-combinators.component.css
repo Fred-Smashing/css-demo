@@ -1,43 +1,67 @@
 /* Universal Selector */
 * {
-    display: flex;
-    justify-content: space-around;
+    /* display: grid; */
+    /* justify-content: space-around; */
 
-    padding: 2%;
+    /* padding: 2%; */
     margin: auto;
 
     transition: all ease .3s;
+
+    /* border: 2px solid darkslategray; */
+
+    padding: 20px;
+    /* border-radius: 2rem; */
 }
 
 /* Id selector */
-#main {
-    width: auto;
-    height: auto;
-
+#main-title {
+    /* width: 100%; */
+    height: 100%;
     margin: auto;
+
+    text-align: center;
+    text-decoration: underline;
 }
 
 /* Type Selector */
-div {
-    border-radius: 2rem;
+p {
+    width: auto;
+    height: max-content;
+
+    margin: auto;
+
+    word-wrap: break-word;
 }
 
 /* Class Selector */
-.special {
-    background-color: crimson;
+.secondary-title {
+    mix-blend-mode: screen;
+    /* background-color: crimson; */
 }
 
 /* Attribute Selectors */
-div[attr], /* Any div with the attribute "attr" */
-div[attr="special"] /* Any div with the attribute "attr" with a value of "special" */ {
+div[attr],
+/* Any div with the attribute "attr" */
+div[attr="special"]
+
+/* Any div with the attribute "attr" with a value of "special" */
+    {
     background-color: cadetblue;
 }
 
-div[attr^="14"], /* Any div with the attribute "attr" where the value starts with "14" */
-div[attr$="14"], /* Any div with the attribute "attr" where the value ends with "14" */
-div[attr*="14"], /* Any div with the attribute "attr" where the value contains "14" */
-div[attr~="14"], /* Any div with the attribute "attr" where the value contains "14" surrounded by whitespace */
-div[attr|="14"] /* Any div with the attribute "attr" where the value contains "14" surrounded by "-" hyphens */ {
+div[attr^="14"],
+/* Any div with the attribute "attr" where the value starts with "14" */
+div[attr$="14"],
+/* Any div with the attribute "attr" where the value ends with "14" */
+div[attr*="14"],
+/* Any div with the attribute "attr" where the value contains "14" */
+div[attr~="14"],
+/* Any div with the attribute "attr" where the value contains "14" surrounded by whitespace */
+div[attr|="14"]
+
+/* Any div with the attribute "attr" where the value contains "14" surrounded by "-" hyphens */
+    {
     color: aquamarine;
 }
 
@@ -50,14 +74,4 @@ div[attr|="14"] /* Any div with the attribute "attr" where the value contains "1
 #main>#first,
 #main>#second {
     width: 100px;
-}
-
-#first {
-    border: 2px solid blue;
-    min-height: 20px;
-}
-
-#second {
-    border: 2px solid red;
-    min-height: 20px;
 }
