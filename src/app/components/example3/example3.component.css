@@ -6,36 +6,13 @@
     justify-content: center;
 }
 
-/* Size and flex direction of cards changes depending on screen size*/
-@media(min-width: 1001px) {
-    #card-container>.card {
-        width: 25vw;
-    }
-}
 
-@media(max-width:1000px) and (min-width:895px) {
-    #card-container>.card {
-        width: 40vw;
-    }
-}
-
-@media(max-width: 894px) {
-    #card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #card-container>.card {
-        width: 50vw;
-    }
-}
 
 #card-container>.card {
     margin: 1vmin 1vmin;
 }
 
 .card {
-    aspect-ratio: 1/1.5;
     background-color: rgb(25, 25, 25);
     border: 6px solid rgb(200, 90, 90);
     border-radius: 25px;
@@ -43,4 +20,47 @@
 
 .card:nth-child(even) {
     background-color: rgb(250, 250, 250);
+}
+
+/* Media Specific Styling */
+@media screen {
+    @media(min-width: 1001px) {
+        .card {
+            width: 25vw;
+        }
+    }
+
+    @media(max-width:1000px) and (min-width:895px) {
+        .card {
+            width: 40vw;
+        }
+    }
+
+    @media(max-width: 894px) {
+        #card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #card-container>.card {
+            width: 30vw
+        }
+    }
+
+    .card {
+        aspect-ratio: 1/1.5;
+    }
+}
+
+@media print {
+    #card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90vw;
+        height: 90vh;
+        page-break-after: always;
+    }
 }
