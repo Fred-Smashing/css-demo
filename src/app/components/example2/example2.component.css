@@ -38,7 +38,7 @@
     z-index: 1;
 }
 
-.card:hover:before {
+.card:hover::before {
     /* Move the background into visible area on hover */
     background-position: 99% 99%;
     opacity: 100;
@@ -50,10 +50,7 @@
     height: 100%;
     width: 100%;
 
-    background: radial-gradient(
-        rgba(255, 255 ,255, 0.2) 8%,
-        transparent 8%
-    );
+    background: radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
 
     background-position: 0% 0%;
     background-size: 5vmin 5vmin;
@@ -63,6 +60,6 @@
     z-index: 2;
 }
 
-.card:hover > .content {
+.card:hover>.content {
     background-position: -20% 0%;
 }
