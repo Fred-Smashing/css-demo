@@ -1,19 +1,39 @@
-
-
+/* Menu Styles */
 #menu {
-    background-color: black;
     height: 100%;
     display: flex;
     align-items: center;
+
+    --background-dark: rgb(25, 25, 25);
+    background-color: var(--background-dark);
 }
 
 #menu-items {
-    margin-left: 15%;
-    z-index: 2;
+    margin-left: 5rem;
+    padding: 2rem;
+
+    background-color: var(--background-dark);
+
+    transition: background-color ease 0.4s;
+}
+
+#menu-items:hover {
+    background-color: white;
+}
+
+/* Menu Item Styles*/
+#menu-items:hover>.menu-item {
+    opacity: 0.25;
+}
+
+#menu-items:hover>.menu-item:hover {
+    opacity: 1;
 }
 
 .menu-item {
     color: white;
+    mix-blend-mode: difference;
+
     font-size: clamp(3rem, 8vw, 8rem);
     font-family: "Franklin Gothic Medium";
 
@@ -21,35 +41,5 @@
     text-decoration: none;
     padding: .5rem;
 
-    transition: opacity ease 0.4s;
-}
-
-#menu-items:hover > .menu-item {
-    opacity: 0.3;
-}
-#menu-items:hover > .menu-item:hover {
-    opacity: 1;
-}
-
-#background {
-    position: absolute;
-    z-index: 1;
-
-    height: 100vh;
-    width: 100vw;
-
-    background-image: radial-gradient(
-        rgba(225, 225, 225, 0.1) 9%,
-        transparent 9%
-    );
-
-    background-position: 0% 0%;
-    background-size: 12vmin 12vmin;
-
-    transition: all ease 0.4s;
-}
-
-#menu-items:hover ~ #background {
-    background-size: 11vmin 11vmin;
-    opacity: 0.5;
+    transition: opacity ease 0.4s, color ease 0.4s;
 }

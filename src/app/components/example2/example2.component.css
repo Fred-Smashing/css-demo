@@ -1,15 +1,12 @@
 .card {
+    position: relative;
     aspect-ratio: 1 /1.6;
+    width: 400px;
 
     background-color: black;
-
     border: 5px solid lightseagreen;
 
     cursor: pointer;
-
-    position: relative;
-
-    width: 30vmin;
 
     z-index: 0;
 }
