@@ -1,0 +1,65 @@
+/* PSEUDO CLASSES */
+
+/* Active Element*/
+div:active {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Checked Checkbox / Radio inputs*/
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Disabled Elements */
+div:disabled {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Enabled Elements */
+div:enabled {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Element with no children */
+div:empty {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* First child of the element */
+/* First of it's type inside it's parent */
+div:first-child
+div:first-of-type {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Focused Elements */
+div:focus,
+div:focus-visible,
+div:focus-within {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Hovered Elements */
+div:hover {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Various Nth selectors */
+:nth-child(),
+:nth-last-child(),
+:nth-of-type(),
+:nth-last-of-type(),
+:nth-col(),
+:nth-last-col() {
+    /* Style Definitions */
+    overflow: auto;
+}

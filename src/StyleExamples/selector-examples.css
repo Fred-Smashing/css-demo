@@ -1,0 +1,61 @@
+/* SELECTORS */
+
+/* Class */
+.class-name {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Id */
+#id-name {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Element */
+div {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Universal */
+* {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Attribute Selectors */
+[attribute] {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+[attribute=value] {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+[attribute~=value] {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+[attribute|=value] {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+[attribute^=value] {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+[attribute$=value] {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+[attribute*=value] {
+    /* Style Definitions */
+    overflow: auto;
+}

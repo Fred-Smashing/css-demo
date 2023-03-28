@@ -15,9 +15,6 @@
 
     margin: auto;
     padding: 5%;
-
-    overflow-x: hidden;
-    overflow-y: scroll;
     
     box-shadow: inset 0px 0px 5px 2px #6e6e6e;
 }

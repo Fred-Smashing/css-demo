@@ -1,0 +1,71 @@
+.card {
+    aspect-ratio: 1 /1.6;
+
+    background-color: black;
+
+    border: 5px solid lightseagreen;
+
+    cursor: pointer;
+
+    position: relative;
+
+    width: 30vmin;
+
+    z-index: 0;
+}
+
+.card::before {
+    content: '';
+
+    /* Background takes up the entire space of the card */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(130deg,
+            transparent 0% 33%,
+            #833ab4 33%,
+            #fd1d1d 66%,
+            #fcb045 100%);
+
+    /* Move the background out of the visible area */
+    background-position: 0% 0%;
+    background-size: 303% 303%;
+
+    opacity: 0;
+
+    transition: background-position ease 0.4s, opacity ease 0.2s;
+
+    z-index: 1;
+}
+
+.card:hover:before {
+    /* Move the background into visible area on hover */
+    background-position: 99% 99%;
+    opacity: 100;
+}
+
+.content {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    background: radial-gradient(
+        rgba(255, 255 ,255, 0.2) 8%,
+        transparent 8%
+    );
+
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin;
+
+    transition: background-position ease 0.3s;
+
+    z-index: 2;
+}
+
+.card:hover > .content {
+    background-position: -20% 0%;
+}

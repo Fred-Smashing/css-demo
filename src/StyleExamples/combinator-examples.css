@@ -1,0 +1,25 @@
+/* COMBINATORS */
+
+/* Adjacent Sibling */
+li:first-of-type+li {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Child */
+ul>li {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Descendant */
+ul li {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* General Sibling */
+p~span {
+    /* Style Definitions */
+    overflow: auto;
+}

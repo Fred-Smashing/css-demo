@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AtRulesComponent } from './components/at-rules/at-rules.component';
-import { FunctionsComponent } from './components/functions/functions.component';
-import { PseudoClassesElementsComponent } from './components/pseudo-classes-elements/pseudo-classes-elements.component';
-import { SelectorsCombinatorsComponent } from './components/selectors-combinators/selectors-combinators.component';
+import { Example1Component } from './components/example1/example1.component';
+import { Example2Component } from './components/example2/example2.component';
+import { Example3Component } from './components/example3/example3.component';
 
 const routes: Routes = [
-  { path: 'selectors-combinators', component: SelectorsCombinatorsComponent },
-  { path: 'pseudo-classes-elements', component: PseudoClassesElementsComponent },
-  { path: 'at-rules', component: AtRulesComponent },
-  { path: 'functions', component: FunctionsComponent }
+  { path: 'example-1', component: Example1Component },
+  { path: 'example-2', component: Example2Component },
+  { path: 'example-3', component: Example3Component },
 ];
 
 @NgModule({
