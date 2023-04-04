@@ -1,8 +1,30 @@
 <div id="card-container">
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+    <app-product-card
+        [name]="'Super Great Product'"
+        [description]="'We only sell the very best product, the greatest you might say'"
+        [price]="9_999.99">
+    </app-product-card>
+    <app-product-card
+        [name]="'The Almost Great Product'"
+        [description]="'The budget option of our super great product, still the best product, the greatest, the least smallest product'"
+        [price]="999.99">
+    </app-product-card>
+    <app-product-card
+        [name]="'The Slightly Greater Product'"
+        [description]="'This product is exactly the same as the almost great product, but we slapped a new label on it and are going to charge twice as much'"
+        [price]="1_999.98">
+    </app-product-card>
+    <app-product-card
+        [name]="'The Not So Great Product'"
+        [description]="'What did you expect? It was ninety nine pence!'"
+        [price]="0.99"></app-product-card>
+    <app-product-card
+        [name]="'The Product'"
+        [description]="'The original, we know its about 10 years out of date, and doesn\'t have half the features of our newer products. But the classic, why buy anything else?'"
+        [price]="10_987.65">
+    </app-product-card>
+    <app-product-card
+        [name]="'The Last Product'"
+        [description]="'Why are you reading this instead of paying attention?'"
+        [price]="800"></app-product-card>
 </div>
