@@ -10,6 +10,17 @@
     grid-template-rows: 2fr 3fr 1fr;
 }
 
+.card::after {
+    counter-increment: itemnumber;
+    content: ""counter(itemnumber)".";
+    color:whitesmoke;
+
+    position: relative;
+    width: 20px;
+    left: 90%;
+    bottom: 40%;
+}
+
 .card>* {
     width: 80%;
     margin: auto;
@@ -19,7 +30,8 @@
     h1,
     p,
     span {
-    color: whitesmoke;
+        color: whitesmoke;
+
     }
 }
 

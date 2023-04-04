@@ -22,12 +22,19 @@
 }
 
 /* Menu Item Styles*/
-#menu-items:hover>.menu-item {
+#menu-items:hover .menu-item {
     opacity: 0.25;
+    color: rgb(170, 255, 255);
 }
 
 #menu-items:hover>.menu-item:hover {
     opacity: 1;
+    color: rgb(225, 225, 225);
+    transform: translateX(5%);
+}
+
+#menu-items:hover>.menu-item:hover~.menu-item {
+    color: rgb(255, 170, 710);
 }
 
 .menu-item {
@@ -41,5 +48,5 @@
     text-decoration: none;
     padding: .5rem;
 
-    transition: opacity ease 0.4s, color ease 0.4s;
+    transition: opacity ease 0.4s, color ease 0.4s, transform ease 1s;
 }

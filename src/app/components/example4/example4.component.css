@@ -1,0 +1,11 @@
+#container {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.item {
+    width: 1em;
+    aspect-ratio: 1/1;
+
+    border: 1px solid black;
+}
