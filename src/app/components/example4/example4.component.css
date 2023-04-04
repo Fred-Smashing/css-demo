@@ -1,11 +1,45 @@
-#container {
-    display: grid;
-    grid-auto-rows: auto;
+.screensaver {
+    width: 20vw;
+    aspect-ratio: 1/1;
+    position: absolute;
+
+    animation: screensaver 12s linear 0s infinite alternate, colorblend 5s linear 0s infinite forwards;
 }
 
-.item {
-    width: 1em;
-    aspect-ratio: 1/1;
+@keyframes screensaver {
 
-    border: 1px solid black;
+    0% {
+        left: 0vw;
+        top: calc(0vh - 5vw);
+    }
+
+    30% {
+        left: calc(100vw - 20vw);
+        top: calc(50vh - 10vw);
+    }
+
+    50% {
+        left: calc(50vw - 10vw);
+        top: calc(100vh - 15vw);
+    }
+
+    70% {
+        left: 0vw;
+        top: calc(50vh - 10vw);
+    }
+
+    100% {
+        left: calc(100vw - 20vw);
+        top: calc(0vh - 5vw);
+    }
+}
+
+@keyframes colorblend {
+    from {
+        filter: invert(100%) hue-rotate(0deg) saturate(100%);
+    }
+
+    to {
+        filter: invert(100%) hue-rotate(360deg);
+    }
 }
