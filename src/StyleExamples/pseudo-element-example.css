@@ -1,0 +1,42 @@
+/* PSEUDO ELEMENTS */
+
+/* After Element */
+div::after {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Backdrop Element */
+div::backdrop {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Before Element */
+div::before {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* Cue Element */
+video::cue {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* First Letter */
+div::first-letter {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/* First Line */
+div::first-line {
+    /* Style Definitions */
+    overflow: auto;
+}
+
+/*
+* More Examples at:
+* https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+*/
