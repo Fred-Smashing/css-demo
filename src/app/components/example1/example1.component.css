@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
 
-    --background-dark: rgb(25, 25, 25);
+    --background-dark: #191919;
     background-color: var(--background-dark);
 }
 
@@ -24,17 +24,17 @@
 /* Menu Item Styles*/
 #menu-items:hover .menu-item {
     opacity: 0.25;
-    color: rgb(170, 255, 255);
+    color: #aaffff;
 }
 
 #menu-items:hover>.menu-item:hover {
     opacity: 1;
-    color: rgb(225, 225, 225);
+    color: white;
     transform: translateX(5%);
 }
 
 #menu-items:hover>.menu-item:hover~.menu-item {
-    color: rgb(255, 170, 710);
+    color: #ffaa47;
 }
 
 .menu-item {
